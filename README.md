@@ -12,12 +12,12 @@ EgoPlan-Bench2: A Planning Benchmark for Multi-modal Large Language Models in Di
 ---
 
 ## 📌 Table of Contents
-- EgoPlan-Bench2 Overview
-- Dataset Examples
-- Evaluation Pipeline
-- Run Prompting and CoT
-- Citation
-- Related Works
+- [EgoPlan-Bench2 Overview](#-egoplan-bench2-overview)
+- [Dataset Examples](#-dataset-examples)
+- [Evaluation Pipeline](#-evaluation-pipeline)
+- [Run Prompting and CoT](#-run-prompting-and-cot)
+- [Citation](#black_nib-citation)
+- [Related Works](#-related-works)
 
 
 ## 👀 EgoPlan-Bench2 Overview
@@ -135,7 +135,7 @@ bash scripts/eval_EgoPlan2_longva.sh
 
 ## 🔍 Run Prompting and CoT
 
-📍 **Task progress Prompting**:
+📍 **Task Progress Prompting**:
 
 To exreact action sequences from the historical task progress, please first change the api key of GPT in [call_gpt.py](CoT/call_gpt.py), and then run the following code:
 ```bash
