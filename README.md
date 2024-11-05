@@ -56,6 +56,8 @@ Ego4D
 
 📍 **Benchmark**:
 
+Please click [this link](https://huggingface.co/datasets/qiulu66/EgoPlan-Bench2/tree/main) to download EgoPlan-Bench2.
+
 Questions from the human-verified evaluation data are formatted as multiple-choice problems. MLLMs need to select the most reasonable answer from four candidate choices. The primary metric is Accuracy.
 
 Below shows an example from EgoPlan-Bench2:
