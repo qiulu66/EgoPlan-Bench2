@@ -135,6 +135,14 @@ bash scripts/eval_EgoPlan2_longva.sh
 
 ## 🔍 Run Prompting and CoT
 
+📍 **Method Overview**:
+
+<div>
+<p align="center">
+  <img src="./figures/cot.png" width="100%" height="100%" />
+</p>
+</div>
+
 📍 **Task Progress Prompting**:
 
 To exreact action sequences from the historical task progress, please first change the api key of GPT in [call_gpt.py](CoT/call_gpt.py), and then run the following code:
