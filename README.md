@@ -1,10 +1,14 @@
 <div align="center">
 <h1>
-EgoPlan-Bench2: A Planning Benchmark for Multi-modal Large Language Models in Diverse Real-World Scenarios
+EgoPlan-Bench2: A Benchmark for Multimodal Large Language Model Planning in Real-World Scenarios
+
+<a href='https://qiulu66.github.io/egoplanbench2/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
+<a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
+<a href='https://huggingface.co/datasets/qiulu66/EgoPlan-Bench2/tree/main'><img src='https://img.shields.io/badge/Dataset-EgoPlan2-blue'></a>
 </h1>
 
 <p align="center">
-  <img src="./figures/task_overview.png" width="100%" height="100%" />
+  <img src="./figures/teaser.png" width="100%" height="100%" />
 </p>
 
 </div>
@@ -22,11 +26,11 @@ EgoPlan-Bench2: A Planning Benchmark for Multi-modal Large Language Models in Di
 
 ## 👀 EgoPlan-Bench2 Overview
 
-The rapid development of Multi-modal Large Language Models (MLLMs) which combine remarkable comprehension and generalization capacities has highlighted their potential ways to Artificial General Intelligence (AGI). A key milestone in AGI is achieving human-level task planning capabilities, which is essential for managing everyday human activities. This capability empowers models to make informed decisions in intricate environments, assisting humans in addressing a broad range of real-world challenges. Despite the notable progress within the realm of MLLMs, questions still remains: how effectively do MLLMs perform in real-world planning tasks, and how far are MLLMs from human-level task planners?
+The advent of Multimodal Large Language Models (MLLMs), leveraging the power of Large Language Models, has recently demonstrated superior multimodal understanding and reasoning abilities, heralding a new era for artificial general intelligence (AGI). However, achieving AGI necessitates more than just comprehension and reasoning. A crucial capability required is effective planning in diverse scenarios, which involves making reasonable decisions based on complex environments to solve real-world problems. Despite its importance, the planning abilities of current MLLMs in varied scenarios remain underexplored, leaving a significant gap in our understanding of their full potential.
 
-In the quest for answering these questions, we introduce **EgoPlan-Bench2**, a comprehensive benchmark designed to evaluate MLLMs across diverse real-world planning tasks. EgoPlan-Bench2 is built upon the principles of first-person perspective and an extremely rich set of real-world tasks spanning 4 key domains and 24 fine-grained scenarios in human life, with a focus on evaluating models' planning abilities. We evaluate a wide range of MLLMs and observe that they still face substantial challenges, underscoring the need for considerable enhancements to attain human-level planning proficiency. To compensate the deficiency of the model and foster further improvements, we develop diverse prompts tailored to the characteristics of planning tasks, thereby augmenting the performance of GPT-4V on EgoPlan-Bench2 in a train-free manner.
+In this paper, we introduce **EgoPlan-Bench2**, a rigorous and comprehensive benchmark designed to assess the planning capabilities of MLLMs across a wide range of real-world scenarios. EgoPlan-Bench2 encompasses everyday tasks spanning 4 major domains and 24 detailed scenarios, closely aligned with human daily life. EgoPlan-Bench2 is constructed through a semi-automatic process utilizing egocentric videos, complemented by manual verification. Grounded in a first-person perspective, it mirrors the way humans approach problem-solving in everyday life. We evaluate 21 competitive MLLMs and provide an in-depth analysis of their limitations, revealing that they face significant challenges in real-world planning. To further improve the planning proficiency of current MLLMs, we propose a training-free approach using multimodal Chain-of-Thought (CoT) prompting through investigating the effectiveness of various multimodal prompts in complex planning. Our approach enhances the performance of GPT-4V by 10.24% on EgoPlan-Bench2 without additional training. Our work not only sheds light on the current limitations of MLLMs in planning, but also provides insights for future enhancements in this critical area.
 
-This repository describes the usage of our proposed EgoPlan-Bench2, and provides the corresponding codes for benchmarking MLLMs and enhancing GPT-4V's performance by prompting and CoT. Welcome to evaluate your models and explore methods to enhance the models' EgoPlan capabilities on our benchmark!
+This repository describes the usage of our proposed EgoPlan-Bench2, and provides the corresponding codes for benchmarking MLLMs and enhancing GPT-4V's performance by multimodal CoT prompting. Welcome to evaluate your models and explore methods to enhance the models' EgoPlan capabilities on our benchmark!
 
 <div>
 <p align="center">
@@ -133,7 +137,7 @@ bash scripts/eval_EgoPlan2_internvl2.sh
 bash scripts/eval_EgoPlan2_longva.sh
 ```
 
-## 🔍 Run Prompting and CoT
+## 🔍 Run Multimodal CoT Prompting
 
 📍 **Method Overview**:
 
@@ -175,7 +179,7 @@ python create_bounding_box.py \
     --anno_path $YOUR_ANNOTATION_PATH
 ```
 
-📍 **CoT Reasoning**:
+📍 **Prompt-Based Reasoning**:
 
 Run the script to get the final results:
 ```bash
