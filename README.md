@@ -151,8 +151,7 @@ bash scripts/eval_EgoPlan2_longva.sh
 
 To exreact action sequences from the historical task progress, please first change the api key of GPT in [call_gpt.py](CoT/call_gpt.py), and then run the following code:
 ```bash
-cd CoT
-python create_action_seq.py \
+python CoT/create_action_seq.py \
     --video_dir $YOUR_VIDEO_FOLD \
     --anno_path $YOUR_ANNOTATION_PATH
 ```
@@ -173,8 +172,7 @@ cd ..
 ```
 Then, run the following code:
 ```bash
-cd CoT
-python create_bounding_box.py \
+python CoT/create_bounding_box.py \
     --dino_dir $YOUR_DINO_FOLD \
     --anno_path $YOUR_ANNOTATION_PATH
 ```
