@@ -3,7 +3,7 @@
 EgoPlan-Bench2: A Benchmark for Multimodal Large Language Model Planning in Real-World Scenarios
 
 <a href='https://qiulu66.github.io/egoplanbench2/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
-<a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
+<a href='https://arxiv.org/abs/2412.04447/'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
 <a href='https://huggingface.co/datasets/qiulu66/EgoPlan-Bench2/tree/main'><img src='https://img.shields.io/badge/Dataset-EgoPlan2-blue'></a>
 </h1>
 
@@ -186,7 +186,15 @@ bash scripts/cot.sh
 
 ## :black_nib: Citation
 
-If you find our work helpful for your research, please consider citing our work.   
+If you find our work helpful for your research, please consider citing our work.
+```bash
+@article{qiu2024egoplanbench2,
+    title = {EgoPlan-Bench2: A Benchmark for Multimodal Large Language Model Planning in Real-World Scenarios},
+    author = {Qiu, Lu and Ge, Yuying and Chen, Yi and Ge, Yixiao and Shan, Ying and Liu, Xihui},
+    year = {2024},
+    journal = {arXiv preprint arXiv:2412.04447}
+}   
+```
 
 ## 📜 Related Works
 
