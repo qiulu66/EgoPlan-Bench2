@@ -190,7 +190,7 @@ If you find our work helpful for your research, please consider citing our work.
 ```bash
 @article{qiu2024egoplanbench2,
     title = {EgoPlan-Bench2: A Benchmark for Multimodal Large Language Model Planning in Real-World Scenarios},
-    author = {Qiu, Lu and Ge, Yuying and Chen, Yi and Ge, Yixiao and Shan, Ying and Liu, Xihui},
+    author = {Qiu, Lu and Chen, Yi and Ge, Yuying and Ge, Yixiao and Shan, Ying and Liu, Xihui},
     year = {2024},
     journal = {arXiv preprint arXiv:2412.04447}
 }   
